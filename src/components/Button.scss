@@ -9,4 +9,14 @@
   color: $white;
   font-size: rem(17px);
   font-weight: 800;
+  transition: transform 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient($light-slate-blue-bg, $light-royal-blue-bg);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
