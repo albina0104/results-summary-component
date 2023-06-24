@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../index' as *;
 
 .button {
@@ -7,6 +8,8 @@
   border-style: none;
   background-color: $dark-gray-blue;
   color: $white;
+  text-shadow: rem(1px) rem(1px) rem(1px)
+    color.adjust($dark-gray-blue, $alpha: -0.7);
   font-size: rem(17px);
   font-weight: 800;
   transition: transform 0.2s;
