@@ -1,0 +1,17 @@
+@use './index' as *;
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    max-width: rem(736px);
+    border-radius: rem(30px);
+    box-shadow: rem(10px) rem(10px) rem(30px) $pale-blue;
+
+    & > * {
+      width: 50%;
+    }
+  }
+}

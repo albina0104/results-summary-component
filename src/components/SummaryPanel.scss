@@ -3,16 +3,30 @@
 .summary-panel {
   padding: rem(24px) rem(30px) rem(30px);
 
+  @include desktop {
+    padding: rem(24px) rem(40px) rem(48px);
+  }
+
   & > div:not(:last-of-type) {
     margin-bottom: rem(17px);
   }
 
   & > div:last-of-type {
     margin-bottom: rem(25px);
+
+    @include desktop {
+      margin-bottom: rem(40px);
+    }
   }
 }
 
 .summary-heading {
   padding-bottom: rem(25px);
   font-size: rem(18px);
+
+  @include desktop {
+    padding-top: rem(14px);
+    padding-bottom: rem(22px);
+    font-size: rem(24px);
+  }
 }

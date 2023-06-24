@@ -25,7 +25,12 @@
   display: flex;
   padding: rem(16px);
   border-radius: rem(15px);
+  font-size: rem(16px);
   font-weight: 700;
+
+  @include desktop {
+    font-size: rem(18px);
+  }
 
   & > :last-child {
     margin-left: auto;
