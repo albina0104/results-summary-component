@@ -7,7 +7,7 @@ function SummaryItem({ color, itemData }) {
       <div className='item-type'>{itemData.category}</div>
       <div>
         <span className='score'>{itemData.score}</span>
-        <span className='total-score'> / 100</span>
+        <span className='total-score'>&nbsp;&nbsp;/ 100</span>
       </div>
     </div>
   );
