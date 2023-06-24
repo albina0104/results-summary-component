@@ -5,7 +5,8 @@
   padding: rem(23px) rem(61px) rem(39px);
   border-radius: 0 0 rem(30px) rem(30px);
   background: linear-gradient($light-slate-blue-bg, $light-royal-blue-bg);
-  color: $white;
+  text-shadow: rem(1px) rem(1px) rem(1px)
+    color.adjust($dark-gray-blue, $alpha: -0.7);
   text-align: center;
 
   @include desktop {
@@ -17,7 +18,7 @@
 .heading-1 {
   margin-bottom: rem(24px);
   font-size: rem(18px);
-  color: color.adjust($white, $alpha: -0.3);
+  color: $light-lavender;
 
   @include desktop {
     margin-bottom: rem(34px);
@@ -29,6 +30,7 @@
   margin-top: rem(23px);
   margin-bottom: rem(8px);
   font-size: rem(24px);
+  color: $white;
 
   @include desktop {
     margin-bottom: rem(15px);
@@ -38,7 +40,7 @@
 
 .result-panel__text {
   font-size: rem(16px);
-  color: color.adjust($white, $alpha: -0.3);
+  color: $light-lavender;
 
   @include desktop {
     font-size: rem(18px);

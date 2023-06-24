@@ -7,6 +7,7 @@
   margin: auto;
   background: linear-gradient($violet-blue-circle, $persian-blue-circle);
   border-radius: 50%;
+  color: $white;
 
   @include desktop {
     width: rem(200px);
@@ -29,7 +30,8 @@
   &__total-score {
     font-size: rem(16px);
     font-weight: 700;
-    color: color.adjust($white, $alpha: -0.6);
+    // color: color.adjust($white, $alpha: -0.6);
+    color: color.adjust($light-lavender, $lightness: -10%);
 
     @include desktop {
       font-size: rem(18px);
