@@ -9,6 +9,7 @@
   text-align: center;
 
   @include desktop {
+    padding: rem(38px) rem(61px) rem(39px);
     border-radius: rem(30px);
   }
 }
@@ -19,6 +20,7 @@
   color: color.adjust($white, $alpha: -0.3);
 
   @include desktop {
+    margin-bottom: rem(34px);
     font-size: rem(24px);
   }
 }
@@ -29,6 +31,7 @@
   font-size: rem(24px);
 
   @include desktop {
+    margin-bottom: rem(15px);
     font-size: rem(32px);
   }
 }
