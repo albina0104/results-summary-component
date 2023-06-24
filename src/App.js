@@ -3,10 +3,11 @@ import ResultPanel from './components/ResultPanel';
 import SummaryPanel from './components/SummaryPanel';
 
 function App() {
+  const data = require('./data/data.json');
   return (
     <div className='App'>
-      <ResultPanel />
-      <SummaryPanel />
+      <ResultPanel data={data} />
+      <SummaryPanel data={data} />
     </div>
   );
 }

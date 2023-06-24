@@ -1,12 +1,13 @@
 import './SummaryItem.scss';
 
-function SummaryItem() {
+function SummaryItem({ color, itemData }) {
   return (
-    <div>
-      <img src='{}' alt='' />
-      <div>Reaction</div>
+    <div className={`${color} summary-item`}>
+      <img src={itemData.icon} alt='' />
+      <div className='item-type'>{itemData.category}</div>
       <div>
-        <span>80</span> / <span>100</span>
+        <span className='score'>{itemData.score}</span>
+        <span className='total-score'> / 100</span>
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+@use '../index' as *;
+
+.button {
+  width: 100%;
+  padding: rem(20px);
+  border-radius: rem(30px);
+  border-style: none;
+  background-color: $dark-gray-blue;
+  color: $white;
+  font-size: rem(17px);
+  font-weight: 800;
+}

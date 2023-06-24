@@ -1,0 +1,18 @@
+@use '../index' as *;
+
+.summary-panel {
+  padding: rem(30px);
+
+  & > div:not(:last-of-type) {
+    margin-bottom: rem(17px);
+  }
+
+  & > div:last-of-type {
+    margin-bottom: rem(25px);
+  }
+}
+
+.summary-heading {
+  padding-bottom: rem(10px);
+  font-size: rem(18px);
+}

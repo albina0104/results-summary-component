@@ -1,0 +1,45 @@
+@use 'sass:color';
+@use '../index' as *;
+
+@mixin colored-item($color) {
+  background-color: color.adjust($color, $alpha: -0.9);
+  & > .item-type {
+    color: $color;
+  }
+}
+
+.red {
+  @include colored-item($light-red);
+}
+.yellow {
+  @include colored-item($orangey-yellow);
+}
+.teal {
+  @include colored-item($green-teal);
+}
+.blue {
+  @include colored-item($cobalt-blue);
+}
+
+.summary-item {
+  display: flex;
+  padding: rem(16px);
+  border-radius: rem(15px);
+  font-weight: 700;
+
+  & > :last-child {
+    margin-left: auto;
+  }
+}
+
+.item-type {
+  padding-left: rem(10px);
+  padding-right: rem(10px);
+}
+
+.score {
+  color: $dark-gray-blue;
+}
+.total-score {
+  color: color.adjust($dark-gray-blue, $alpha: -0.5);
+}

@@ -2,14 +2,14 @@ import './SummaryPanel.scss';
 import SummaryItem from './SummaryItem';
 import Button from './Button';
 
-function SummaryPanel() {
+function SummaryPanel({ data }) {
   return (
-    <section>
-      <h2>Summary</h2>
-      <SummaryItem />
-      <SummaryItem />
-      <SummaryItem />
-      <SummaryItem />
+    <section className='summary-panel'>
+      <h2 className='summary-heading'>Summary</h2>
+      <SummaryItem color='red' itemData={data[0]} />
+      <SummaryItem color='yellow' itemData={data[1]} />
+      <SummaryItem color='teal' itemData={data[2]} />
+      <SummaryItem color='blue' itemData={data[3]} />
       <Button />
     </section>
   );
