@@ -23,6 +23,7 @@
 .summary-heading {
   padding-bottom: rem(25px);
   font-size: rem(18px);
+  color: $dark-gray-blue;
 
   @include desktop {
     padding-top: rem(14px);
