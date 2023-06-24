@@ -1,7 +1,7 @@
 @use '../index' as *;
 
 .summary-panel {
-  padding: rem(30px);
+  padding: rem(24px) rem(30px) rem(30px);
 
   & > div:not(:last-of-type) {
     margin-bottom: rem(17px);
@@ -13,6 +13,6 @@
 }
 
 .summary-heading {
-  padding-bottom: rem(10px);
+  padding-bottom: rem(25px);
   font-size: rem(18px);
 }
