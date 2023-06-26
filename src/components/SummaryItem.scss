@@ -3,7 +3,7 @@
 
 @mixin colored-item($color) {
   background-color: color.adjust($color, $alpha: -0.9);
-  & > .item-type {
+  & > .summary-item__type {
     color: $color;
   }
 }
@@ -42,14 +42,14 @@
   height: rem(20px);
 }
 
-.item-type {
+.summary-item__type {
   padding-left: rem(10px);
   padding-right: rem(10px);
 }
 
-.score {
+.summary-item__score {
   color: $dark-gray-blue;
 }
-.total-score {
+.summary-item__total-score {
   color: color.adjust($dark-gray-blue, $alpha: -0.5);
 }

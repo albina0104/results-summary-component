@@ -5,7 +5,7 @@ import Button from './Button';
 function SummaryPanel({ data }) {
   return (
     <section className='summary-panel'>
-      <h2 className='summary-heading'>Summary</h2>
+      <h2 className='summary-panel__heading'>Summary</h2>
       <SummaryItem color='red' itemData={data[0]} />
       <SummaryItem color='yellow' itemData={data[1]} />
       <SummaryItem color='teal' itemData={data[2]} />
