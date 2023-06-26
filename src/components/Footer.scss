@@ -1,0 +1,16 @@
+@use '../index' as *;
+
+.attribution {
+  font-size: rem(12px);
+  padding: rem(20px);
+  text-align: center;
+  color: $dark-gray-blue;
+
+  & a {
+    color: $light-royal-blue-bg;
+
+    &:hover {
+      color: $light-red;
+    }
+  }
+}
