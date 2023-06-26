@@ -7,11 +7,11 @@
     padding: rem(24px) rem(40px) rem(48px);
   }
 
-  & > div:not(:last-of-type) {
+  & > section:not(:last-of-type) {
     margin-bottom: rem(17px);
   }
 
-  & > div:last-of-type {
+  & > section:last-of-type {
     margin-bottom: rem(25px);
 
     @include desktop {
