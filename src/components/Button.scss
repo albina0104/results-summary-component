@@ -19,6 +19,10 @@
     background: linear-gradient($light-slate-blue-bg, $light-royal-blue-bg);
   }
 
+  &:focus {
+    outline: rem(4px) solid $orangey-yellow;
+  }
+
   &:active {
     transform: scale(0.9);
   }
