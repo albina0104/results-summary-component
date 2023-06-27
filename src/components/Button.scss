@@ -10,7 +10,8 @@
   color: $white;
   text-shadow: rem(1px) rem(1px) rem(1px)
     color.adjust($dark-gray-blue, $alpha: -0.7);
-  font-size: rem(17px);
+  font-family: $font;
+  font-size: rem(18px);
   font-weight: 800;
   transition: transform 0.2s;
   cursor: pointer;
