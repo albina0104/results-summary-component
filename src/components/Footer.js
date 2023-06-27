@@ -2,7 +2,7 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <footer class='attribution'>
+    <footer className='attribution'>
       <p>
         Challenge by{' '}
         <a
