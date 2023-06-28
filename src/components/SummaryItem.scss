@@ -2,7 +2,8 @@
 @use '../index' as *;
 
 @mixin colored-item($color) {
-  background-color: color.adjust($color, $alpha: -0.9);
+  background-color: color.adjust($color, $alpha: -0.945);
+
   & > .summary-item__type {
     color: $color;
   }
