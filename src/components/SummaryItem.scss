@@ -4,6 +4,17 @@
 @mixin colored-item($color) {
   background-color: color.adjust($color, $alpha: -0.945);
 
+  $shadow-size: rem(1px);
+  $shadow-alpha: -0.6;
+  box-shadow: (-$shadow-size) (-$shadow-size) 0 (-$shadow-size)
+      color.adjust($color, $alpha: $shadow-alpha),
+    $shadow-size (-$shadow-size) 0 (-$shadow-size)
+      color.adjust($color, $alpha: $shadow-alpha),
+    (-$shadow-size) $shadow-size 0 (-$shadow-size)
+      color.adjust($color, $alpha: $shadow-alpha),
+    $shadow-size $shadow-size 0 (-$shadow-size)
+      color.adjust($color, $alpha: $shadow-alpha);
+
   & > .summary-item__type {
     color: $color;
   }
