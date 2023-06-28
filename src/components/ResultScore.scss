@@ -30,7 +30,6 @@
   &__total-score {
     font-size: rem(16px);
     font-weight: 700;
-    // color: color.adjust($white, $alpha: -0.6);
     color: color.adjust($light-lavender, $lightness: -10%);
 
     @include desktop {
