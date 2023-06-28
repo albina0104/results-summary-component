@@ -100,7 +100,15 @@ Note: this is my first React app!
 
 - Create React App can automatically convert a json to an object when you import a .json file.
 
-  Articles: [Mastering JSON in ReactJS](https://tamalweb.com/json-reactjs), [3 ways to import a JSON file in React](https://www.learnbestcoding.com/post/81/3-ways-to-import-a-json-file-in-react).
+  I used the following method to import a JSON file:
+  ```js
+  const data = require('./data/data.json');
+  ```
+
+  Articles:
+  - [Mastering JSON in ReactJS](https://tamalweb.com/json-reactjs)
+  
+  - [3 ways to import a JSON file in React](https://www.learnbestcoding.com/post/81/3-ways-to-import-a-json-file-in-react).
 
 - Article: [Styling in React: 5 ways to style React apps](https://blog.logrocket.com/styling-react-5-ways-style-react-apps/).
 
@@ -132,6 +140,12 @@ Note: this is my first React app!
   It will make a production-ready build and upload the build to the `gh-pages` branch, from which GitHub will automatically deploy the website.
 
   I didn't manage to automate deployment with GitHub Actions using instructions from this video, it didn't work, I will need to research this topic further in the future.
+
+  Note: the absolute homepage path was done for deploying the app to GitHub Pages, but it broke links in the local build, so the images disappeared from the website. I found the following solution in the [Create React App documentation](https://create-react-app.dev/docs/deployment/#serving-the-same-build-from-different-paths) - to use this instead:
+  ```json
+  "homepage": ".",
+  ```
+  This will make sure that all the asset paths are relative to `index.html`.
 
 - I learned how to create borders only in the corners thanks to a StackOverflow answer to this question: [How can I show only corner borders?](https://stackoverflow.com/a/69827141). Among all difficult looking and not perfect options, one simple approach was offered, which uses multiple `box-shadow`:
 ```css
